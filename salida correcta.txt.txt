@@ -1,0 +1,50 @@
+=== TABLA DE SÍMBOLOS ===
+NOMBRE          TIPO       CATEGORÍA       LÍNEA      COLUMNA    ÁMBITO          DETALLES
+--------------------------------------------------------------------------------------------
+contadorGlobal  int        variable        5          4          global          [private]
+valorPi         double     variable        6          7          global          [private]
+inicial         char       variable        7          5          global          [private]
+activo          bool       variable        8          5          global          [private]
+sumar           int        funcion         11         4          global          [private] [int, int]
+a               int        parametro       11         14         sumar
+b               int        parametro       11         21         sumar
+resultado       int        variable        12         8          sumar           [private]
+main            int        funcion         19         4          global          [private]
+estado          int        variable        20         8          main            [private]
+temp            int        variable        21         8          main            [private]
+numeros         int        variable        22         8          main            [arr:3] [private]
+auxiliar        int        variable        50         12         main            [private]
+
+código intermedio
+  0: func_sumar:
+  1: t0 = a + b
+  2: resultado = t0
+  3: t1 = contadorGlobal + 1
+  4: contadorGlobal = t1
+  5: return resultado
+  6: func_main:
+  7: contadorGlobal = 0
+  8: valorPi = null
+  9: inicial = null
+ 10: numeros = 0
+ 11: numeros = 1
+ 12: numeros = 2
+ 13: t2 = null + null
+ 14: temp = t2
+ 15: t3 = temp * 2
+ 16: temp = t3
+ 17: t4 = temp / 3
+ 18: temp = t4
+ 19: t5 = temp % 5
+ 20: temp = t5
+ 21: estado = null
+ 22: contadorGlobal = estado
+ 23: valorPi = temp
+ 24: inicial = null
+ 25: t6 = estado > 0
+ 26: if !t6 goto L0
+ 27: t7 = estado + 10
+ 28: auxiliar = t7
+ 29: estado = auxiliar
+ 30: L0:
+ 31: return estado
